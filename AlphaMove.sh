@@ -18,6 +18,13 @@ echo "
 
 #*********************************************************************************************
 								#Declaring Array
+								
+	if [ "$*" == "" ]; then
+    	echo "Source And Destination Paths are Required In Argument !"		#Argument Required 
+   	 exit 1
+   	 fi
+	 
+	 
 array1=()
 path1=$1
 path2=$2
